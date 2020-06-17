@@ -1,4 +1,4 @@
-package com.qeeka.sample02.handler;
+package com.qeeka.sample03.handler;
 
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
@@ -15,7 +15,7 @@ public class TimeClientHandler extends ChannelHandlerAdapter {
     private int count;
 
     public TimeClientHandler() {
-        req = ("QUERY TIME ORDER" + System.getProperty("line.separator")).getBytes();
+        req = ("QUERY TIME ORDER . $_").getBytes();
     }
 
     @Override
